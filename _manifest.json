@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "头像获取插件 (Avatar Fetcher Plugin)",
+  "description": "通过指令获取 @用户 或指定 QQ 号的头像，以图片形式发送",
+  "author": {
+    "name": "DeepSeek-V4",
+    "url": "https://github.com/DeepSeek-V4-Pro"
+  },
+  "license": "GPL-3.0-or-later",
+  "urls": {
+    "repository": "https://github.com/DeepSeek-V4-Pro/avatar_fetcher_plugin",
+    "homepage": "https://github.com/DeepSeek-V4-Pro/avatar_fetcher_plugin"
+  },
+  "host_application": {
+    "min_version": "1.0.0",
+    "max_version": "1.99.99"
+  },
+  "sdk": {
+    "min_version": "2.0.0",
+    "max_version": "2.99.99"
+  },
+  "dependencies": [
+    {
+      "type": "python_package",
+      "name": "aiohttp",
+      "version_spec": ">=3.0.0"
+    }
+  ],
+  "capabilities": [
+    "send.text",
+    "send.image",
+    "config.get"
+  ],
+  "i18n": {
+    "default_locale": "zh-CN",
+    "supported_locales": ["zh-CN"]
+  },
+  "id": "deepseek-v4-pro.avatar-fetcher-plugin"
+}
